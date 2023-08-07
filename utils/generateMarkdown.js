@@ -53,5 +53,6 @@ This project is licensed under the ${license}. Click ${renderLicenseLink(
 
 `;
   }
+}
 
   module.exports = generateMarkdown;
