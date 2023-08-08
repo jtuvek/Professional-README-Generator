@@ -50,34 +50,43 @@ This project is licensed under the ${license}. Click ${renderLicenseLink(
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  // Create the Table of Contents section based on user responses
+  let tableOfContents = `## Table of Contents\n\n`;
+  if (data.installation) {
+    tableOfContents += `- [Installation](#installation)\n`;
+  }
+  if (data.usage) {
+    tableOfContents += `- [Usage](#usage)\n`;
+  }
+  if (data.license !== 'No License') {
+    tableOfContents += `- [License](#license)\n`;
+  }
+  if (data.contributing) {
+    tableOfContents += `- [Contributing](#contributing)\n`;
+  }
+  if (data.tests) {
+    tableOfContents += `- [Tests](#tests)\n`;
+  }
+  tableOfContents += `- [Questions](#questions)\n\n`;
+
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
 ## Description
 
 ${data.description}
 
-## Table of Contents
+${tableOfContents}
 
-TODO: Add table of contents here.
+${data.installation ? `## Installation\n\n${data.installation}\n\n` : ''}
 
-## Installation
-
-${data.installation}
-
-## Usage
-
-${data.usage}
+${data.usage ? `## Usage\n\n${data.usage}\n\n` : ''}
 
 ${renderLicenseSection(data.license)}
 
-## Contributing
+${data.contributing ? `## Contributing\n\n${data.contributing}\n\n` : ''}
 
-${data.contributing}
-
-## Tests
-
-${data.tests}
+${data.tests ? `## Tests\n\n${data.tests}\n\n` : ''}
 
 ## Questions
 
