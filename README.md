@@ -33,7 +33,7 @@ To run the application, execute the following command in your terminal: `node in
 The application will prompt you with a series of questions about your project. Answer each question, and the README Generator will dynamically create a comprehensive README.md file based on your input.
 
 <!-- Add a link to your walkthrough video here (Replace `walkthrough-video-link` with the actual link) -->
-[Watch the Walkthrough Video](walkthrough-video-link)
+[Watch the Walkthrough Video](https://drive.google.com/file/d/1s--lmLqL7S0SE-bOrgNxcCwaAogpgkBi/view)
 
 ## License
 
