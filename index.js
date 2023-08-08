@@ -10,7 +10,6 @@ const questions = [
         name: 'title',
         message: 'Enter the title of your project:',
     },
-    // Add more questions for other sections like description, installation, usage, etc.
     {
         type: 'input',
         name: 'description',
@@ -21,7 +20,11 @@ const questions = [
         name: 'installation',
         message: 'Enter installation instructions:',
     },
-    // ... (add more questions for other sections)
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Enter usage information:',
+    },
     {
         type: 'list',
         name: 'license',
@@ -33,6 +36,16 @@ const questions = [
             'ISC License',
             'No License',
         ],
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Enter contribution guidelines:',
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Enter test instructions:',
     },
     {
         type: 'input',
