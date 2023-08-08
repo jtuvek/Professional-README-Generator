@@ -23,10 +23,9 @@ function renderLicenseLink(license) {
   }
 
   const licenseLinks = {
-    'MIT License': 'LICENSE_LINK_URL',
-    'GNU GPLv3': 'LICENSE_LINK_URL',
-    'Apache License 2.0': 'LICENSE_LINK_URL',
-    'ISC License': 'LICENSE_LINK_URL',
+    'MIT License': 'https://opensource.org/licenses/mit-license.php',
+    'Apache License 2.0': ' http://www.apache.org/licenses/LICENSE-2.0',
+    'ISC License': 'https://api.github.com/licenses/isc',
   };
 
   return `[License](LICENSE_LINK_URL)`;
@@ -50,7 +49,41 @@ This project is licensed under the ${license}. Click ${renderLicenseLink(
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return `# ${data.title}
+    ${renderLicenseBadge(data.license)}
 
+## Description
+
+TODO: Add project description here.
+
+## Table of Contents
+
+TODO: Add table of contents here.
+
+## Installation
+
+TODO: Add installation instructions here.
+
+## Usage
+
+TODO: Add usage information here.
+
+${renderLicenseSection(data.license)}
+
+## Contributing
+
+TODO: Add contribution guidelines here.
+
+## Tests
+
+TODO: Add test instructions here.
+
+## Questions
+
+For additional questions, contact me:
+
+GitHub: [${data.github}](https://github.com/${data.github})
+
+Email: ${data.email}
 `;
   }
 }
