@@ -6,10 +6,10 @@ function renderLicenseBadge(license) {
   }
 
   const licenseBadges = {
-    'MIT License': 'LICENSE_BADGE_URL',
-    'GNU GPLv3': 'LICENSE_BADGE_URL',
-    'Apache License 2.0': 'LICENSE_BADGE_URL',
-    'ISC License': 'LICENSE_BADGE_URL',
+    'MIT License': 'https://img.shields.io/badge/License-MIT-yellow.svg',
+    'GNU GPLv3': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+    'Apache License 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
+    'ISC License': 'https://img.shields.io/badge/License-ISC-blue.svg',
   };
 
   return `[![License](https://img.shields.io/badge/license-${license.replace(/ /g, '%20')}-${licenseBadges[license]}-blue.svg)]`;
@@ -23,9 +23,10 @@ function renderLicenseLink(license) {
   }
 
   const licenseLinks = {
-    'MIT License': 'https://opensource.org/licenses/mit-license.php',
-    'Apache License 2.0': ' http://www.apache.org/licenses/LICENSE-2.0',
-    'ISC License': 'https://api.github.com/licenses/isc',
+    'MIT License': 'https://opensource.org/licenses/MIT',
+    'GNU GPLv3': 'https://www.gnu.org/licenses/gpl-3.0',
+    'Apache License 2.0': 'https://opensource.org/licenses/Apache-2.0',
+    'ISC License': 'https://opensource.org/licenses/ISC',
   };
 
   return `[License](LICENSE_LINK_URL)`;
