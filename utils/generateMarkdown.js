@@ -29,7 +29,7 @@ function renderLicenseLink(license) {
     'ISC License': 'https://opensource.org/licenses/ISC',
   };
 
-  return `[License](LICENSE_LINK_URL)`;
+  return `[License](${licenseLinks[license]})`;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -44,13 +44,14 @@ function renderLicenseSection(license) {
 This project is licensed under the ${license}. Click ${renderLicenseLink(
     license
   )} for more details.
-
-`;
-
-  // TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {
-    return `# ${data.title}
-    ${renderLicenseBadge(data.license)}
+  
+  `;
+}
+  
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
+  return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
 ## Description
 
@@ -86,7 +87,6 @@ GitHub: [${data.github}](https://github.com/${data.github})
 
 Email: ${data.email}
 `;
-  }
 }
 
-  module.exports = generateMarkdown;
+module.exports = generateMarkdown;
