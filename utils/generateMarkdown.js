@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
     'ISC License': 'https://img.shields.io/badge/License-ISC-blue.svg',
   };
 
-  return `[![License](https://img.shields.io/badge/license-${license.replace(/ /g, '%20')}-${licenseBadges[license]}-blue.svg)]`;
+  return `[![License](${licenseBadges[license]})](${renderLicenseLink(license)})`;
 }
 
 // TODO: Create a function that returns the license link
