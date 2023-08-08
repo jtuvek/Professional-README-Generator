@@ -1,5 +1,5 @@
 # Professional README Generator
-  [![License](https://img.shields.io/badge/license-MIT%20License-https://img.shields.io/badge/License-MIT-yellow.svg-blue.svg)]
+  [![License][(https://img.shields.io/badge/license-MIT%20License-https://img.shields.io/badge/License-MIT-yellow.svg-blue.svg)]
 
 ## Description
 

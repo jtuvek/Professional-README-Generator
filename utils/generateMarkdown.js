@@ -55,7 +55,7 @@ function generateMarkdown(data) {
 
 ## Description
 
-TODO: Add project description here.
+${data.description}
 
 ## Table of Contents
 
@@ -63,21 +63,21 @@ TODO: Add table of contents here.
 
 ## Installation
 
-TODO: Add installation instructions here.
+${data.installation}
 
 ## Usage
 
-TODO: Add usage information here.
+${data.usage}
 
 ${renderLicenseSection(data.license)}
 
 ## Contributing
 
-TODO: Add contribution guidelines here.
+${data.contributing}
 
 ## Tests
 
-TODO: Add test instructions here.
+${data.tests}
 
 ## Questions
 
