@@ -28,8 +28,7 @@ Replace `your-username` with your GitHub username.
 
 ## Usage
 
-To run the application, execute the following command in your terminal:
-node index.js
+To run the application, execute the following command in your terminal: `node index.js`
 
 The application will prompt you with a series of questions about your project. Answer each question, and the README Generator will dynamically create a comprehensive README.md file based on your input.
 
@@ -50,12 +49,12 @@ To test the Professional README Generator, follow these steps:
 
 1. Make sure you have all the dependencies installed (run `npm install` if you haven't already).
 
-2. Run the tests using the following command:
+2. Run the tests using the following command: `npm test`
 
 ## Questions
 
 If you have any additional questions or need further assistance, please feel free to contact me:
 
-GitHub: [your-github-username](https://github.com/your-github-username)
+GitHub: https://github.com/jtuvek
 
-Email: your-email@example.com
+Email: jtuvek1109@gmail.com
